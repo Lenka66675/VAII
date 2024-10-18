@@ -6,20 +6,14 @@ html, body {
 }
 body {
     background-image: url('images/backG.jpg'); /* Nastavenie pozadia */
+    background-attachment: fixed; /* Fixovanie pozadia pri scrollovaní */
+
     background-size: cover; /* Prispôsobenie obrázka celej ploche */
     background-position: center; /* Umiestnenie obrázka do stredu */
     background-repeat: no-repeat; /* Zabránenie opakovaniu obrázka */
 }
 
-.background-overlay {
-    position: absolute; /* Absolútne pozicovanie */
-    top: 0;
-    left: 0;
-    width: 100%; /* Pokryť celú šírku */
-    height: 100%; /* Pokryť celú výšku */
-    background-color: rgba(200, 200, 200, 0.5);
-    z-index: 1; /* Umiestnenie nad pozadím */
-}
+
 /*.container-fluid {background-color: #db1212}*/
 
 .logo-img {
@@ -30,7 +24,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(90deg, rgba(211, 211, 211, 0.8) 30%, #DA1818 100%); /* Dvojfarebný gradient so šedou a tmavočervenou */
+    background: linear-gradient(90deg, rgba(100, 100, 100, 0.8) 30%, #DA1818 100%); /* Dvojfarebný gradient so šedou a tmavočervenou */
 
     background-color: darkred; /* Pozadie navbaru */
     padding: 0.20%;
@@ -39,7 +33,7 @@ body {
     z-index: 2;
 }
 .navbar-nav .nav-link {
-    color: #4B4B4B; /* Tmavosivé písmo */
+    color: white; /* Tmavosivé písmo */
     padding: 10px 15px; /* Padding pre prepínače */
     background-color: rgba(255, 255, 255, 0.2); /* Polopriesvitné biele pozadie */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Tien na pravej a spodnej strane */
@@ -113,3 +107,157 @@ body {
 }
 
 
+body {
+    display: flex;
+    flex-direction: column; /* Zabezpečí, že prvky budú zoradené vertikálne */
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 600px; /* Pridaj margin na spodok, aby si posunul footer nižšie */
+
+}
+
+.footer {
+    background-color: #f8f9fa; /* Farba pozadia pre footer */
+    padding: 10px; /* Zmenšiť padding footeru */
+    position: relative; /* Umiestnenie je relatívne */
+    bottom: 0; /* Umiestnenie na spodok */
+    width: 100%; /* Footer zaberá 100% šírky */
+}
+
+
+textarea {
+
+    line-height: 1.2;
+    list-style-type: none;
+    font-family: 'Roboto Slab', serif; /* Naklonené a hrubé písmo */
+    font-weight: 800; /* Hrubšie písmo */
+    font-style: italic; /* Naklonenie písma */
+    font-size: 25px; /* Zväčšené písmo */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4); /* Efekt podfarbenia textu */
+    text-align: center;
+    width: 40%; /* Nastavenie šírky textového poľa */
+    height: 175px; /* Výška textového poľa */
+    resize: none; /* Zamedzenie zmene veľkosti textového poľa */
+    margin-top: 190px; /* Priestor nad textovým poľom */
+    padding: 0; /* Padding pre text v poli */
+    border-radius: 8px; /* Zaoblenie rohov textového poľa */
+    border: 2px solid transparent; /* Bez viditeľného orámovania */
+    background-color: rgba(255, 255, 255, 0.01); /* Polopriesvitné pozadie textového poľa */
+    color: #E1E1E1; /* Farba textu v textovom poli */
+    margin-left: 20px; /* Ďalší okraj zľava */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Podobné podsvietenie ako obrázky */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animácia pri hover */
+}
+
+/* Efekt pri prechode myšou nad textarea */
+textarea:hover {
+    transform: scale(1.05); /* Zväčší textové pole pri hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Zmení pozadie pri hover */
+}
+
+/* Efekt pri zaostrení textového poľa */
+textarea:focus {
+    outline: none; /* Zruší predvolené orámovanie */
+    border-color: rgba(218, 24, 24, 0.5); /* Zmení farbu rámčeka pri zaostrení */
+    background-color: rgba(255, 255, 255, 0.4); /* Zmení pozadie na svetlejšie pri zaostrení */
+    box-shadow: 0 0 10px rgba(218, 24, 24, 0.5); /* Podsvietenie pri zaostrení */
+}
+
+
+.content-container {
+    display: flex; /* Zarovná textové pole a obrázky vedľa seba */
+    flex-direction: column; /* Usporiadanie na stĺpec */
+    align-items: center; /* Umiestnenie prvkov na stred */
+    padding: 30px;
+}
+
+textarea {
+    line-height: 1.2;
+    list-style-type: none;
+    font-family: 'Roboto Slab', serif; /* Naklonené a hrubé písmo */
+    font-weight: 800; /* Hrubšie písmo */
+    font-style: italic; /* Naklonenie písma */
+    font-size: 25px; /* Zväčšené písmo */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4); /* Efekt podfarbenia textu */
+    text-align: center;
+    width: 100%; /* Zaberá 100% šírky */
+    max-width: 600px; /* Maximálna šírka textového poľa */
+    height: 175px; /* Výška textového poľa */
+    resize: none; /* Zamedzenie zmene veľkosti textového poľa */
+    margin: 20px 0; /* Priestor nad a pod textovým poľom */
+    padding: 0; /* Padding pre text v poli */
+    border-radius: 8px; /* Zaoblenie rohov textového poľa */
+    border: 2px solid transparent; /* Bez viditeľného orámovania */
+    background-color: rgba(255, 255, 255, 0.01); /* Polopriesvitné pozadie textového poľa */
+    color: #E1E1E1; /* Farba textu v textovom poli */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Podobné podsvietenie ako obrázky */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animácia pri hover */
+}
+
+/* Efekt pri prechode myšou nad textarea */
+textarea:hover {
+    transform: scale(1.05); /* Zväčší textové pole pri hover */
+    background-color: rgba(255, 255, 255, 0.3); /* Zmení pozadie pri hover */
+}
+
+/* Efekt pri zaostrení textového poľa */
+textarea:focus {
+    outline: none; /* Zruší predvolené orámovanie */
+    border-color: rgba(218, 24, 24, 0.5); /* Zmení farbu rámčeka pri zaostrení */
+    background-color: rgba(255, 255, 255, 0.4); /* Zmení pozadie na svetlejšie pri zaostrení */
+    box-shadow: 0 0 10px rgba(218, 24, 24, 0.5); /* Podsvietenie pri zaostrení */
+}
+
+/* Galéria obrázkov s použitím grid layoutu */
+.image-gallery {
+    margin-top: 20px; /* Medzera nad galériou obrázkov */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Päť stĺpcov pre obrázky */
+    gap: 20px; /* Zvýšená medzera medzi obrázkami */
+    width: 100%; /* Šírka galérie */
+    max-width: 800px; /* Maximálna šírka galérie */
+}
+
+/* Štýl jednotlivých obrázkov */
+.image-item {
+    display: flex;
+    flex-direction: column; /* Umiestnenie popisu pod obrázkom */
+    align-items: center; /* Centrovanie popisu */
+}
+
+/* Obrázky */
+.image {
+    width: 100%; /* Obrázky sa prispôsobia šírke kontajnera */
+    height: auto; /* Udržuje pomer strán */
+    border-radius: 8px; /* Zaoblenie rohov */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efekt tieňa */
+    transition: transform 0.3s ease; /* Animácia pri hover */
+}
+
+/* Efekt pri prechode myšou nad obrázkom */
+.image:hover {
+    transform: scale(1.05); /* Zväčší obrázok pri hover */
+}
+
+/* Usporiadanie obrázkov na dvoch riadkoch */
+.image-item:nth-child(1) {
+    grid-column: 1; /* Prvý obrázok v prvom stĺpci */
+}
+
+.image-item:nth-child(2) {
+    grid-column: 3; /* Druhý obrázok v druhom stĺpci */
+}
+
+.image-item:nth-child(3) {
+    grid-column: 5; /* Tretí obrázok v treťom stĺpci */
+}
+
+.image-item:nth-child(4) {
+    grid-column: 2; /* Štvrtý obrázok zaberá dva stĺpce */
+}
+
+.image-item:nth-child(5) {
+    grid-column: 4; /* Piati obrázok zaberá dva stĺpce */
+}
