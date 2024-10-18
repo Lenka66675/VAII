@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Zabezpečiť, že html a body majú 100% výšku */
+}
+body {
+    background-image: url('images/backG.jpg'); /* Nastavenie pozadia */
+    background-attachment: fixed; /* Fixovanie pozadia pri scrollovaní */
+
+    background-size: cover; /* Prispôsobenie obrázka celej ploche */
+    background-position: center; /* Umiestnenie obrázka do stredu */
+    background-repeat: no-repeat; /* Zabránenie opakovaniu obrázka */
+}
+
+
+/*.container-fluid {background-color: #db1212}*/
+
+.logo-img {
+    height: 50px; /* Nastav výšku loga */
+    width: auto; /* Šírka sa prispôsobí zachovaniu pomeru strán */
+    margin-right: 15px; /* Pridanie medzery vpravo od loga */
+    margin-left: 15px;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(100, 100, 100, 0.8) 30%, #DA1818 100%); /* Dvojfarebný gradient so šedou a tmavočervenou */
+
+    background-color: darkred; /* Pozadie navbaru */
+    padding: 0.20%;
+    border: 2px solid black; /* Čierne orámovanie */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Môžeš pridať tieň pre efekt */
+    z-index: 2;
+}
+.navbar-nav .nav-link {
+    color: white; /* Tmavosivé písmo */
+    padding: 10px 15px; /* Padding pre prepínače */
+    background-color: rgba(255, 255, 255, 0.2); /* Polopriesvitné biele pozadie */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Tien na pravej a spodnej strane */
+    text-decoration: none; /* Odstránenie predvoleného podčiarknutia */
+    border: 2px solid transparent; /* Počiatočné orámovanie ako transparentné */
+    border-radius: 0; /* Zaoblenie rohov */
+    transition: all 0.3s ease; /* Plynulý prechod */
+    position: relative; /* Pre použitie absolútneho pozicovania */
+}
+
+
+
+/* Podčiarknutie a predelenie pri hover */
+.navbar-nav .nav-link:hover {
+    color: #4B4B4B; /* Tmavosivé písmo pri hover */
+    background-color: rgba(0, 0, 0, 0.2); /* Polopriesvitné biele pozadie pri hover */
+    border: 2px solid white; /* Biele orámovanie pri hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Lesklý efekt pri hover */
+}
+
+/* Pridanie podčiarknutia a predelenia */
+.navbar-nav .nav-link::after {
+    content: ""; /* Obsah pseudo-elementu */
+    display: block; /* Umožniť mu zaberať miesto */
+    width: 100%; /* Šírka podčiarknutia */
+    height: 2px; /* Výška podčiarknutia */
+    background-color: #4B4B4B; /* Tmavosivé podčiarknutie */
+    position: absolute; /* Absolútne pozicovanie */
+    left: 0; /* Zarovná doľava */
+    bottom: -2px; /* Posunúť podčiarknutie pod text */
+    transform: scaleX(0); /* Začiatok s 0 šírkou */
+    transition: transform 0.3s ease; /* Plynulý prechod */
+}
+
+/* Efekt pri hover pre podčiarknutie */
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1); /* Rozšíriť podčiarknutie na plnú šírku */
+}
+
+
+.btn-primary {
+    background-color: #DA1818; /* Hlavná farba pozadia tlačidla */
+    color: white; /* Farba textu tlačidla */
+    border: 1px solid white; /* Čierne orámovanie */
+    border-radius: 5px; /* Zaoblenie rohov tlačidla */
+    padding: 10px 20px; /* Padding pre tlačidlo */
+    transition: all 0.01s ease; /* Plynulý prechod */
+}
+
+/* Efekt pri hover */
+.btn-primary:hover {
+    background-color: #DA1818; /* Hlavná farba pozadia zostáva rovnaká */
+    border: 2px solid white; /* Zmena orámovania na biele pri hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Efekt lesku pri hover */
+    cursor: pointer; /* Zmena kurzora na pointer */
+}
+.btn-primary:active {
+    background-color: white; /* Celé biele pozadie pri kliknutí */
+    color: #DA1818; /* Zmena farby textu na tmavočervenú */
+    border: 2px solid black; /* Orámovanie zostáva čierne */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Žiadny tien pri kliknutí */
+}
+
+
+
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #DA1818 !important; /* Zaručuje, že pozadie zostane biele */
+
+    border: 2px solid white !important; /* Udržuje čierne orámovanie */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column; /* Zabezpečí, že prvky budú zoradené vertikálne */
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 90px; /* Pridaj margin na spodok, aby si posunul footer nižšie */
+
+}
+
+.footer {
+    background-color: #f8f9fa; /* Farba pozadia pre footer */
+    padding: 10px; /* Zmenšiť padding footeru */
+    position: relative; /* Umiestnenie je relatívne */
+    bottom: 0; /* Umiestnenie na spodok */
+    width: 100%; /* Footer zaberá 100% šírky */
+}
+
+
