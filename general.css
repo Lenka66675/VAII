@@ -32,7 +32,7 @@ body {
     z-index: 2;
 }
 .navbar-nav .nav-link {
-    color: white; /* Tmavosivé písmo */
+    color:  #383838; /* Tmavosivé písmo */
     padding: 10px 15px; /* Padding pre prepínače */
     background-color: rgba(255, 255, 255, 0.2); /* Polopriesvitné biele pozadie */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Tien na pravej a spodnej strane */
@@ -47,7 +47,7 @@ body {
 
 /* Podčiarknutie a predelenie pri hover */
 .navbar-nav .nav-link:hover {
-    color: #4B4B4B; /* Tmavosivé písmo pri hover */
+    color: white; /* Tmavosivé písmo pri hover */
     background-color: rgba(0, 0, 0, 0.2); /* Polopriesvitné biele pozadie pri hover */
     border: 2px solid white; /* Biele orámovanie pri hover */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Lesklý efekt pri hover */
@@ -123,6 +123,14 @@ main {
     position: relative; /* Umiestnenie je relatívne */
     bottom: 0; /* Umiestnenie na spodok */
     width: 100%; /* Footer zaberá 100% šírky */
+}
+
+.bg-light {
+    background: linear-gradient(90deg, rgba(100, 100, 100, 0.8) 30%, #DA1818 100%); /* Dvojfarebný gradient so šedou a tmavočervenou */ !important; /* Zmeň farbu pozadia */
+}
+
+.text-dark {
+    color: #333333 !important; /* Zmeň farbu textu */
 }
 
 

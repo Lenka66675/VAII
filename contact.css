@@ -13,7 +13,7 @@
     transition: all 0.3s ease;
 }
 
-/* Štýly nadpisov */
+
 .contact-info h3,
 .contact-form h3 {
     font-size: 24px;
@@ -29,7 +29,7 @@
     color: #fff;
 }
 
-/* Odkazy */
+
 .contact-info a {
     color: #DA1818;
     text-decoration: none;
@@ -40,7 +40,7 @@
 
 }
 
-/* Formulár */
+
 .contact-form {
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -79,7 +79,7 @@
     background-color: #b21515;
 }
 
-/* Sekcia mapy */
+
 .map-container h3 {
     font-size: 24px;
     color: #fff;
@@ -95,13 +95,13 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Pri hover nad contact blokom */
+
 .contact-info:hover,
 .contact-form:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
 
-/* Pre mobilné zariadenia */
+
 @media (max-width: 768px) {
     .contact-section {
         padding: 40px 20px;
