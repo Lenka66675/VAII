@@ -1,150 +1,122 @@
 
-
-
-
-textarea {
-
-    line-height: 1.2;
-    list-style-type: none;
-    font-family: 'Roboto Slab', serif; /* Naklonené a hrubé písmo */
-    font-weight: 800; /* Hrubšie písmo */
-    font-style: italic; /* Naklonenie písma */
-    font-size: 25px; /* Zväčšené písmo */
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4); /* Efekt podfarbenia textu */
-    text-align: center;
-    width: 40%; /* Nastavenie šírky textového poľa */
-    height: 175px; /* Výška textového poľa */
-    resize: none; /* Zamedzenie zmene veľkosti textového poľa */
-    margin-top: 190px; /* Priestor nad textovým poľom */
-    padding: 0; /* Padding pre text v poli */
-    border-radius: 8px; /* Zaoblenie rohov textového poľa */
-    border: 2px solid transparent; /* Bez viditeľného orámovania */
-    background-color: rgba(255, 255, 255, 0.01); /* Polopriesvitné pozadie textového poľa */
-    color: #E1E1E1; /* Farba textu v textovom poli */
-    margin-left: 20px; /* Ďalší okraj zľava */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Podobné podsvietenie ako obrázky */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Animácia pri hover */
-}
-
-/* Efekt pri prechode myšou nad textarea */
-textarea:hover {
-    transform: scale(1.05); /* Zväčší textové pole pri hover */
-    background-color: rgba(255, 255, 255, 0.3); /* Zmení pozadie pri hover */
-}
-
-/* Efekt pri zaostrení textového poľa */
-textarea:focus {
-    outline: none; /* Zruší predvolené orámovanie */
-    border-color: rgba(218, 24, 24, 0.5); /* Zmení farbu rámčeka pri zaostrení */
-    background-color: rgba(255, 255, 255, 0.4); /* Zmení pozadie na svetlejšie pri zaostrení */
-    box-shadow: 0 0 10px rgba(218, 24, 24, 0.5); /* Podsvietenie pri zaostrení */
-}
-
-
 .content-container {
-    display: flex; /* Zarovná textové pole a obrázky vedľa seba */
-    flex-direction: column; /* Usporiadanie na stĺpec */
-    align-items: center; /* Umiestnenie prvkov na stred */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px;
 }
-
+/*
 textarea {
     line-height: 1.2;
     list-style-type: none;
-    font-family: 'Roboto Slab', serif; /* Naklonené a hrubé písmo */
-    font-weight: 800; /* Hrubšie písmo */
-    font-style: italic; /* Naklonenie písma */
-    font-size: 25px; /* Zväčšené písmo */
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4); /* Efekt podfarbenia textu */
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 25px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.4);
     text-align: center;
-    width: 100%; /* Zaberá 100% šírky */
-    max-width: 600px; /* Maximálna šírka textového poľa */
-    height: 175px; /* Výška textového poľa */
-    resize: none; /* Zamedzenie zmene veľkosti textového poľa */
-    margin: 50px 0; /* Priestor nad a pod textovým poľom */
-    padding: 0; /* Padding pre text v poli */
-    border-radius: 8px; /* Zaoblenie rohov textového poľa */
-    border: 2px solid transparent; /* Bez viditeľného orámovania */
-    background-color: rgba(255, 255, 255, 0.01); /* Polopriesvitné pozadie textového poľa */
-    color: #E1E1E1; /* Farba textu v textovom poli */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Podobné podsvietenie ako obrázky */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Animácia pri hover */
+    width: 100%;
+    max-width: 600px;
+    height: 175px;
+    resize: none;
+    margin: 50px 0;
+    padding: 0;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.01);
+    color: #E1E1E1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-left: 120px;
 }
 
-/* Efekt pri prechode myšou nad textarea */
+
 textarea:hover {
-    transform: scale(1.05); /* Zväčší textové pole pri hover */
-    background-color: rgba(255, 255, 255, 0.3); /* Zmení pozadie pri hover */
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Efekt pri zaostrení textového poľa */
+
 textarea:focus {
-    outline: none; /* Zruší predvolené orámovanie */
-    border-color: rgba(218, 24, 24, 0.5); /* Zmení farbu rámčeka pri zaostrení */
-    background-color: rgba(255, 255, 255, 0.4); /* Zmení pozadie na svetlejšie pri zaostrení */
-    box-shadow: 0 0 10px rgba(218, 24, 24, 0.5); /* Podsvietenie pri zaostrení */
+    outline: none;
+    border-color: rgba(218, 24, 24, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(218, 24, 24, 0.5);
 }
+*/
 
-/* Galéria obrázkov s použitím grid layoutu */
 .image-gallery {
-    margin-top: 70px; /* Medzera nad galériou obrázkov */
+
+    margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Päť stĺpcov pre obrázky */
-    gap: 20px; /* Zvýšená medzera medzi obrázkami */
-    width: 100%; /* Šírka galérie */
-    max-width: 800px; /* Maximálna šírka galérie */
-    margin-left: auto; /* Centerovanie galérie */
-    margin-right: auto; /* Centerovanie galérie */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+    width: 100%;
+    max-width: 2000px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-/* Štýl jednotlivých obrázkov */
 .image-item {
     display: flex;
-    flex-direction: column; /* Umiestnenie popisu pod obrázkom */
-    align-items: center; /* Centrovanie popisu */
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Obrázky */
+
 .image {
-    width: 100%; /* Obrázky sa prispôsobia šírke kontajnera */
-    height: auto; /* Udržuje pomer strán */
-    border-radius: 8px; /* Zaoblenie rohov */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efekt tieňa */
-    transition: transform 0.3s ease; /* Animácia pri hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
 }
 
-/* Efekt pri prechode myšou nad obrázkom */
+
 .image:hover {
-    transform: scale(1.05); /* Zväčší obrázok pri hover */
+    transform: scale(1.1);
 }
 
-/* Popis obrázka */
+
 .image-caption {
-    margin-top: 10px; /* Medzera nad popisom */
-    font-weight: bold; /* Hrubé písmo */
-    font-size: 14px; /* Veľkosť písma */
-    color: #ffffff; /* Farba písma */
-    text-align: center; /* Centrovanie textu */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Efekt podfarbenia textu */
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Responzívne nastavenie pre menšie obrazovky */
+
+.image-item:nth-child(2) {
+    margin-top: 250px;
+}
+
+.image-item:nth-child(4) {
+    margin-top: 250px;
+}
+
+
+
+
 @media (max-width: 1200px) {
     .image-gallery {
-        grid-template-columns: repeat(3, 1fr); /* Tri stĺpce pre obrazovky pod 1200px */
+        grid-template-columns: repeat(3, 1fr);
+
     }
 }
 
 @media (max-width: 992px) {
     .image-gallery {
-        grid-template-columns: repeat(2, 1fr); /* Dva stĺpce pre obrazovky pod 992px */
+        grid-template-columns: repeat(2, 1fr);
+
     }
 }
 
 @media (max-width: 768px) {
     .image-gallery {
-        grid-template-columns: 1fr; /* Jeden stĺpec pre obrazovky pod 768px */
+        grid-template-columns: 1fr;
+
     }
 }
-
-
